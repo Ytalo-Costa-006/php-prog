@@ -14,6 +14,5 @@
 			<input type="password" placeholder="Senha" class="p-2 placeholder:text-gray-400 bg-gray-700 border rounded-md border-gray-950 outline-none focus:border-gray-600">
 			<input type="submit" value="Registre-se" class="cursor-pointer bg-slate-900 p-3 shadow-xl rounded-xl hover:bg-gray-800">
 		</div>
-	</form>
 </body>
 </html>
