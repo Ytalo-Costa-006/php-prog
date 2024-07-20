@@ -48,7 +48,7 @@ if(!isset($usuario)){
 								</h5>
 								<p class="text-base">Edite, liste e adicione exclua seus produtos.</p>
 							</div>
-							<a href="listar_produto.php" class="inline-block text-sm text-white bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded select-none" role="button">Listar produtos</a>
+							<a href="lista_produtos.php" class="inline-block text-sm text-white bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded select-none" role="button">Listar produtos</a>
 						</div>
 					</div>
 				</li>
