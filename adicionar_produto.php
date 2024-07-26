@@ -12,8 +12,8 @@
 			<div class="flex flex-col gap-5 p-5">
 			<h1 class="text-center text-5xl text-gray-50">Formulario de cadastro</h1>
 				<form class="flex flex-col gap-5 p-5" action="_inserir_produto.php">
-					<input type="text" name="nomeproduto" placeholder="Nome do produto" class="bg-gray-700 text-gray-50 p-3 border rounded-md border-gray-950">
-					<input type="text" name="numproduto" placeholder="Numero do produto" class="bg-gray-700 text-gray-50 p-3 border rounded-md border-gray-950">
+					<input required type="text" name="nomeproduto" placeholder="Nome do produto" class="bg-gray-700 text-gray-50 p-3 border rounded-md border-gray-950">
+					<input required type="text" name="numproduto" placeholder="Numero do produto" class="bg-gray-700 text-gray-50 p-3 border rounded-md border-gray-950">
 					<select class="bg-gray-700 text-gray-50 p-3 border rounded-md border-gray-950" name="categoria" required>
 						<option value hidden disabled selected>Selecione a categoria</option>
 						<?php

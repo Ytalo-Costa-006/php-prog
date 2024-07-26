@@ -16,7 +16,7 @@
 			header('Location: index.php');
 		}
 		include "conexao.php";
-		$produtos = $connection->query("SELECT * FROM estoque ORDER BY nomeproduto ASC");
+		$produtos = $connection->query("SELECT * FROM categoria ORDER BY id_categoria ASC");
 		$produtosArray = array();
 
 		if($produtos->num_rows > 0){
@@ -27,7 +27,7 @@
 		mysqli_close($connection);
 	?>
 	<div class="text-center m-5 p-7 text-5xl font-bold size">
-		<h1>Listar produtos</h1>
+		<h1>Listar Categorias</h1>
 	</div>
 
 	<div class="bg-gray-700 m-5 text-gray-50" id="lista"></div>
@@ -56,16 +56,14 @@ const table = new Tabulator("#lista", {
 	],
 
 	columns:[
-			{field: "id_estoque", title:"ID", width:60},
-			{field: "nomeproduto", title:"Nome", headerFilter:"input"},
-			{field: "numproduto", title:"Número", width:100},
-			{field: "categoria", title:"Categoria"},
-			{field: "fornecedor", title:"Fornecedor"},
-			{field: "quantidade", title:"Quantidade", width:120},
-			{title: "Açoes", headerSort:false, width: 155, formatter: cell =>	'<div class="flex items-center justify-center gap-1.5">' + `<a href="editar.php?id=${cell.getRow().getData().id_estoque}" class="mr-3 bg-yellow-600 hover:bg-yellow-700 text-gray-200 inline-flex items-center text-center px-2 rounded-md" role="button">Editar</button>` +
+			{field: "id_categoria", title:"ID", width:60},
+			{field: "categoria", title:"Nome", headerFilter:"input"},
+			{title: "Açoes", headerSort:false, width: 155, formatter: cell =>
+		'<div class="flex items-center justify-center gap-1.5">' +
+			`<a href="editar.php?id=${cell.getRow().getData().id_estoque}" class="mr-3 bg-yellow-600 hover:bg-yellow-700 text-gray-200 inline-flex items-center text-center px-2 rounded-md" role="button">Editar</button>` +
 
 			`<a href="excluir.php?id=${cell.getRow().getData().id_estoque}" class="bg-red-700 hover:bg-red-800 text-gray-200 inline-flex items-center text-center px-2 rounded-md" role="button">Excluir</button>` +
-			'</div>'
+		'</div>'
 			}
 		],
 		locale: "pt-BR",

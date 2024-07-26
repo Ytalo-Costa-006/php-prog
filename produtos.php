@@ -129,7 +129,7 @@ if(!isset($usuario)){
 								</h5>
 								<p class="text-base">Cadastre novos usuários no sistema.</p>
 							</div>
-							<a href="adicionar_fornecedor.php" class="inline-block text-sm text-white bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded select-none" role="button">Cadastrar novo</a>
+							<a href="cadastrar_usuarios.php" class="inline-block text-sm text-white bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded select-none" role="button">Cadastrar novo</a>
 						</div>
 					</div>
 				</li>
